@@ -1,0 +1,31 @@
+[package]
+name = "twitch-soundbot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.0" }
+axum = { version = "0.8.3" }
+constant_time_eq = { version = "0.1.0" }
+dirs = { version = "6.0.0" }
+dotenvy = { version = "0.15.7" }
+futures-util = { version = "0.3.31" }
+hmac = { version = "0.12.0" }
+ngrok = { version = "0.14.0", features = ["axum"] }
+once_cell = { version = "1.21.3" }
+rand = { version = "0.9.0" } 
+rand_chacha = { version = "0.9.0" } 
+reqwest = { version = "0.12.2", features = ["json"] }
+rodio = { version = "0.20.1" }
+serde = { version = "1.0.0", features = ["derive"] }
+serde_json = { version = "1.0.0" }
+sha2 = { version = "0.10.0" }
+tokio = { version = "1.40.0", features = ["full"] }
+tokio-tungstenite = { version = "0.26.2", features = ["native-tls"] }
+twitch_oauth2 = { version = "0.15.2", features = ["reqwest"] }
+url = { version = "2.5.4" }
+
+[dev-dependencies]
+chrono = { version = "0.4.40" }
+http-body-util = { version = "0.1.0" }
+tempfile = { version = "3.19.1" }

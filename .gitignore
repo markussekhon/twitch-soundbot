@@ -1,0 +1,9 @@
+target/
+debug/
+**/*.rs.bk
+
+.env
+.env.*
+.hidden/
+
+sounds/*
